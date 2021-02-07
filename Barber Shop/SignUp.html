@@ -1,0 +1,137 @@
+﻿    <!DOCTYPE html>
+
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>BARBER | HOME</title>
+        <link href="BarberHome.css" rel="stylesheet" />
+        <link href="SignUp.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link type="image/x-icon" href="Images/The-Barber-Saloon1.png" rel="shortcut icon" />
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    </head>
+    <body>
+        <a href="#" id="scroll"><span></span></a>
+        <nav>
+            <div class="logo">
+                <img src="Images/The-Barber-Saloon1.png" alt="Alternate Text" />
+            </div>
+            <ul>
+                <li><a href="Index.html">HOME</a></li>
+                <li><a href="Promo.html">PROMOTION &nabla;</a></li>
+                <li><a href="SignUp.html">SIGN UP &nabla;</a></li>
+            </ul>
+        </nav>
+
+        <section class="conti contentSectionA">
+            <h1 class="InfoHead">The Barber Saloon</h1>
+        </section>
+        <section class="conti contentSectionE">
+            <div class="containedElements">
+                <div class="containedElements-time">
+                    <h2 class="heading">Promotion</h2>
+                    <h3 class="heading-days">Monday - Friday</h3>
+
+                    <p>7am - 7pm (Exemptions)</p><br />
+                    <p>31 March - 16 April 2020</p><br />
+
+                    <h3 class="heading-days">Johannesburg</h3>
+                    <p>Waterford office Park,</p><br />
+                    <p>Maroeladal, Randburg 32</p><br />
+
+                    <hr /><br />
+                    <h4 class="Heading-phone"> Call Us: (079) 40-88-45</h4>
+                </div>
+                <div class="containedElements-form">
+                    <form action="#" method="post">
+                        <h2 class="heading heading-yellow">Reservation Online</h2>
+
+                        <div class="form-filed">
+                            <p>Your Name</p>
+                            <input type="text" placeholder="Your Name" />
+                        </div>
+                        <div class="form-filed">
+                            <p>Your Email</p>
+                            <input type="email" placeholder="Your Email" />
+                        </div>
+                        <div class="form-filed">
+                            <p>Phone no</p>
+                            <input type="tel" placeholder="(_ _ _) _ _-_ _-_ _ " />
+                        </div>
+                        <div class="form-filed">
+                            <p>Date</p>
+                            <input type="date" />
+                        </div>
+                        <div class="form-filed">
+                            <p>Type of promotion</p>
+                            <select name="select" id="#">
+                                <option value="Men's Facial">Men's Facial</option>
+                                <option value="Clean cut">Clean cut</option>
+                                <option value="Close shave">Close shave</option>
+                                <option value="Razor cut">Razor cut</option>
+                                <option value="Face massage">Face massage</option>
+                                <option value="Classic haircut">Classic haircut</option>
+                                <option value="Classic haircut">Classic haircut</option>
+                                <option value="Hair treatment">Hair treatment</option>
+                                <option value="Beard trimming">Beard trimming</option>
+                                <option value="Beard and Moustache">Beard and Moustache</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container ">
+                <h3 class="Barber-shop">The Barber Saloon</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://en-gb.facebook.com/" target="_blank">
+                            <img src="Images/Facebook.png" alt="Facebook" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img src="Images/images3CYYOD67.jpg" alt="Youtube" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="Images/Insagram.jpg" alt="Instagram" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p id="copyRight">Copyright ©2020 All rights reserved | Created By MC Developings</p>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            $(window).on('scroll', function () {
+                if ($(window).scrollTop()) {
+                    $('nav').addClass('black');
+                }
+                else {
+                    $('nav').removeClass('black');
+                }
+            })
+
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('#scroll').fadeIn();
+                    } else {
+                        $('#scroll').fadeOut();
+                    }
+                });
+                $('#scroll').click(function () {
+                    $("html, body").animate({ scrollTop: 0 }, 600);
+                    return false;
+                });
+            });
+        </script>
+
+    </body>
+</html>
